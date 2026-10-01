@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #0f172a;
+  --card-bg: #1e293b;
+  --border-color: #334155;
+  --text-white: #f8fafc;
+  --text-light: #cbd5e1;
+  --primary-color: #3b82f6;
+  --primary-hover: #2563eb;
+  --danger-color: #ef4444;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif !important;
+  background-color: var(--bg-color) !important;
+  color: var(--text-white) !important;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--card-bg) !important;
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+}
+.navbar-brand {
+  font-weight: 700;
+  color: var(--text-white) !important;
+  letter-spacing: 0.5px;
+}
+
+/* Cards */
+.card {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  box-shadow: none !important;
+  color: var(--text-white);
+}
+.card h5, .card-title {
+  color: var(--text-white) !important;
+  font-weight: 600;
+  font-size: 1rem;
+}
+label, small {
+  color: var(--text-light) !important;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.card h2 {
+  color: var(--text-white) !important;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+/* Inputs */
+.form-control, .form-select {
+  background-color: #0f172a !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-white) !important;
+  border-radius: 8px !important;
+  padding: 10px 14px;
+}
+.form-control:focus, .form-select:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2) !important;
+  outline: none;
+}
+.form-control::placeholder { color: #64748b !important; }
+
+/* Table */
+.table-responsive {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background-color: var(--card-bg);
+}
+.table {
+  color: var(--text-white) !important;
+  margin-bottom: 0 !important;
+}
+.table thead th {
+  background-color: #0f172a !important;
+  color: var(--text-light) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 1rem;
+  letter-spacing: 0.5px;
+}
+.table tbody tr { border-bottom: 1px solid var(--border-color) !important; }
+.table tbody tr:hover { background-color: #26334d !important; }
+.table tbody td {
+  color: var(--text-white) !important;
+  padding: 1rem;
+  vertical-align: middle;
+  border: none;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color) !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-weight: 600;
+  padding: 10px 20px;
+  color: #fff !important;
+}
+.btn-primary:hover { background-color: var(--primary-hover) !important; }
+.btn-outline-secondary {
+  color: var(--text-light) !important;
+  border-color: var(--border-color) !important;
+  border-radius: 6px !important;
+}
+.btn-outline-secondary:hover { background-color: var(--border-color) !important; color: #fff !important; }
+.btn-outline-danger {
+  color: var(--danger-color) !important;
+  border-color: rgba(239, 68, 68, 0.5) !important;
+  border-radius: 6px !important;
+}
+.btn-outline-danger:hover { background-color: var(--danger-color) !important; color: #fff !important; }
+
+/* Badges */
+.badge { padding: 6px 10px; border-radius: 6px; font-weight: 500; font-size: 0.75rem; }
+.bg-success { background-color: rgba(34, 197, 94, 0.2) !important; color: #86efac !important; }
+.bg-primary { background-color: rgba(59, 130, 246, 0.2) !important; color: #93c5fd !important; }
+.bg-warning { background-color: rgba(234, 179, 8, 0.2) !important; color: #fde047 !important; }
+.bg-info { background-color: rgba(168, 85, 247, 0.2) !important; color: #d8b4fe !important; }
+.bg-secondary { background-color: rgba(148, 163, 184, 0.2) !important; color: #cbd5e1 !important; }
+
+/* Modal (نافذة التعديل) */
+.modal-content {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-white);
+}
+.modal-header {
+  border-bottom: 1px solid var(--border-color);
+}
+.modal-title {
+  color: var(--text-white);
+  font-weight: 600;
+}
